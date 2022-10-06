@@ -1,6 +1,4 @@
 # Golang-curd
-first golang curd app using iris package
+My first golang **CURD** app using iris package
 
-Enter "go run ."
-
-then you can test the app with postman
+Enter ```go run .``` in command line, then you can test the app with postman
