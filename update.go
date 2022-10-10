@@ -44,7 +44,7 @@ func updateCustomerData(ctx iris.Context) {
 	resp := fmt.Sprintf("Original customer data [%v] has been updated", originalTargetName)
 
 	if valueExist {
-		fmt.Printf("<<%v>>", resp)
+		fmt.Printf("<<%v>>\n", resp)
 		ctx.JSON(iris.Map{"response": resp})
 	} else {
 		fmt.Println("<<id not found>>")

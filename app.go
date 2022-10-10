@@ -16,10 +16,17 @@ type CustomerData struct {
 func main() {
 	app := iris.New()
 
-	app.RegisterView(iris.HTML("./views", ".html"))
-
 	//default data
 	firstData()
+
+	setupRoutes(app)
+
+	app.Run(iris.Addr(":4000"))
+}
+
+func setupRoutes(app *iris.Application) {
+	//default html
+	app.RegisterView(iris.HTML("./views", ".html"))
 
 	//default
 	app.Get("/", defaultGreet)
@@ -38,6 +45,4 @@ func main() {
 
 	//delete customer
 	app.Delete("/customer/{id: string}", deleteCustomerData)
-
-	app.Run(iris.Addr(":4000"))
 }

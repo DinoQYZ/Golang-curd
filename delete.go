@@ -22,7 +22,7 @@ func deleteCustomerData(ctx iris.Context) {
 	resp := fmt.Sprintf("Customer data [%v] has been deleted", target.name)
 
 	if valueExist {
-		fmt.Printf("<<%v>>", resp)
+		fmt.Printf("<<%v>>\n", resp)
 		ctx.JSON(iris.Map{"response": resp})
 	} else {
 		fmt.Println("<<id not found>>")
