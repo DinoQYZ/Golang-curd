@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	iris "github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12"
 )
 
 // put >> /customer/{id: string}

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	uuid "github.com/google/uuid"
-	iris "github.com/kataras/iris/v12"
+	"github.com/google/uuid"
+	"github.com/kataras/iris/v12"
 )
 
 func defaultGreet(ctx iris.Context) {

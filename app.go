@@ -1,7 +1,7 @@
 package main
 
 import (
-	iris "github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12"
 )
 
 var cstmData = make([]CustomerData, 0)
